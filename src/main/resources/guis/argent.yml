@@ -1,0 +1,309 @@
+title: "Argent" # supporte caractères illimités, comme ça on peut mettre un titre custom avec itemsadder
+row: 6
+items:
+    10_ajout:
+      slot: 18
+      quantity: 1
+      material: PAPER
+      custom_model_data: 10061
+      function: add-argent # permet de définir la fonction
+      percentage: 10 # le pourcentage à ajouter
+      name: "&bAjouter 10%"
+      lore:
+      - "&7ajouter de l''argent"
+      - "&7"
+      - "&fAjouter &8- %quantite%" # quantité que le joueur va ajouter (donc 10% de son argent)
+      - "&fMontant en banque &8- %formatte_banque_argent%"
+      - "&fTon argent &8- %formatte_joueur_argent%"
+      - "&f"
+      - "&bAjouter" # ajoute 10%, puis refresh le menu et réactualise les placeholders (sans le fermer)
+      no_permission: # dans le cas ou le joueur n"a pas la permission d"ajouter, on change le lore/item
+         material: PAPER
+         custom_model_data: 10063
+         name: "&bPas la perm"
+         lore:
+         - "&7Tu ne peux pas ajouter"
+         - "&7dans la banque"
+         - "&7le chef de l''île doit te "
+         - "&7donner la perm dans le /ile permissions"
+    25_ajout:
+      slot: 19
+      quantity: 1
+      material: PAPER
+      custom_model_data: 10061
+      function: add-argent
+      percentage: 25
+      name: "&bAjouter 25%"
+      lore:
+      - "&7ajouter de l''argent"
+      - "&7"
+      - "&fAjouter &8- %quantite%" # ici 25% de son argent, peut être un placeholder différent
+      - "&fMontant en banque &8- %formatte_banque_argent%"
+      - "&fTon argent &8- %formatte_joueur_argent%"
+      - "&f"
+      - "&bAjouter"
+      no_permission:
+         material: PAPER
+         custom_model_data: 10063
+         name: "&bPas la perm"
+         lore:
+         - "&7Tu ne peux pas ajouter"
+         - "&7dans la banque"
+         - "&7le chef de l''île doit te "
+         - "&7donner la perm dans le /ile permissions"
+    50_ajout:
+      slot: 20
+      quantity: 1
+      material: PAPER
+      custom_model_data: 10061
+      function: add-argent
+      percentage: 50
+      name: "&bAjouter 50%"
+      lore:
+      - "&7ajouter de l''argent"
+      - "&7"
+      - "&fAjouter &8- %quantite%"
+      - "&fMontant en banque &8- %formatte_banque_argent%"
+      - "&fTon argent &8- %formatte_joueur_argent%"
+      - "&f"
+      - "&bAjouter"
+      no_permission:
+         material: PAPER
+         custom_model_data: 10063
+         name: "&bPas la perm"
+         lore:
+         - "&7Tu ne peux pas ajouter"
+         - "&7dans la banque"
+         - "&7le chef de l''île doit te "
+         - "&7donner la perm dans le /ile permissions"
+    100_ajout:
+      slot: 21
+      quantity: 1
+      material: PAPER
+      custom_model_data: 10061
+      function: add-argent
+      percentage: 100
+      name: "&bAjouter TOUT"
+      lore:
+      - "&7ajouter de l''argent"
+      - "&7"
+      - "&fAjouter tout ton argent &8- %quantite%"
+      - "&fMontant en banque &8- %formatte_banque_argent%"
+      - "&f"
+      - "&bAjouter"
+      no_permission:
+         material: PAPER
+         custom_model_data: 10063
+         name: "&bPas la perm"
+         lore:
+         - "&7Tu ne peux pas ajouter"
+         - "&7dans la banque"
+         - "&7le chef de l''île doit te "
+         - "&7donner la perm dans le /ile permissions"
+    custom_ajout:
+      slot: 30
+      quantity: 1
+      material: PAPER
+      custom_model_data: 10061
+      function: add-argent
+      percentage: -1
+      name: "&bAjouter un montant perso"
+      lore:
+      - "&7Ajouter un montant personnalisé"
+      - "&f"
+      - "&bAjouter"
+      no_permission:
+         material: PAPER
+         custom_model_data: 10063
+         name: "&bPas la perm"
+         lore:
+         - "&7Tu ne peux pas ajouter"
+         - "&7dans la banque"
+         - "&7le chef de l''île doit te "
+         - "&7donner la perm dans le /ile permissions"
+    10_retrait:
+      slot: 23
+      quantity: 1
+      material: PAPER
+      custom_model_data: 10061
+      function: remove-argent # permet de définir la fonction
+      percentage: 10 # le pourcentage à retirer
+      name: "&bretirer 10%"
+      lore:
+      - "&7retirer de l''argent"
+      - "&7"
+      - "&fretirer &8- %quantite%" # quantité que le joueur va retirer (donc 10% de son argent)
+      - "&fMontant en banque &8- %formatte_banque_argent%"
+      - "&fTon argent &8- %formatte_joueur_argent%"
+      - "&f"
+      - "&bretirer" # retire 10%, puis refresh le menu et réactualise les placeholders (sans le fermer)
+      no_permission: # dans le cas ou le joueur n"a pas la permission d"ajouter, on change le lore
+         name: "&bRetire ce que tu as mis"
+         lore:
+         - "&7Tu ne peux pas retirer dans la banque"
+         - "&7le chef de l''île doit te "
+         - "&7donner la perm dans le /ile permissions"
+         - "&7Tu peux uniquement retiré ce que tu as déposé"
+         - "&7"
+         - "&fretirer &8- %quantite%" # quantité que le joueur va retirer (donc 10% des FP qu"il avait ajouté au total)
+         - "&fMontant en banque &8- %formatte_banque_argent%"
+         - "&fTon argent &8- %formatte_joueur_argent%"
+         - "&f"
+         - "&bretirer" # retire 10%, puis refresh le menu et réactualise les placeholders (sans le fermer)
+    25_retrait:
+      slot: 24
+      quantity: 1
+      material: PAPER
+      custom_model_data: 10061
+      function: remove-argent
+      percentage: 25
+      name: "&bretirer 25%"
+      lore:
+      - "&7retirer de l''argent"
+      - "&7"
+      - "&fretirer &8- %quantite%" # ici 25% de son argent, peut être un placeholder différent
+      - "&fMontant en banque &8- %formatte_banque_argent%"
+      - "&fTon argent &8- %formatte_joueur_argent%"
+      - "&f"
+      - "&bretirer"
+      no_permission:
+         name: "&bRetire ce que tu as mis"
+         lore:
+         - "&7Tu ne peux pas retirer dans la banque"
+         - "&7le chef de l''île doit te "
+         - "&7donner la perm dans le /ile permissions"
+         - "&7Tu peux uniquement retiré ce que tu as déposé"
+         - "&7"
+         - "&fretirer &8- %quantite%"
+         - "&fMontant en banque &8- %formatte_banque_argent%"
+         - "&fTon argent &8- %formatte_joueur_argent%"
+         - "&f"
+         - "&bretirer"
+    50_retrait:
+      slot: 25
+      quantity: 1
+      material: PAPER
+      custom_model_data: 10061
+      function: remove-argent
+      percentage: 50
+      name: "&bretirer 50%"
+      lore:
+      - "&7retirer de l''argent"
+      - "&7"
+      - "&fretirer &8- %quantite%"
+      - "&fMontant en banque &8- %formatte_banque_argent%"
+      - "&fTon argent &8- %formatte_joueur_argent%"
+      - "&f"
+      - "&bretirer"
+      no_permission:
+         name: "&bRetire ce que tu as mis"
+         lore:
+         - "&7Tu ne peux pas retirer dans la banque"
+         - "&7le chef de l''île doit te "
+         - "&7donner la perm dans le /ile permissions"
+         - "&7Tu peux uniquement retiré ce que tu as déposé"
+         - "&7"
+         - "&fretirer &8- %quantite%"
+         - "&fMontant en banque &8- %formatte_banque_argent%"
+         - "&fTon argent &8- %formatte_joueur_argent%"
+         - "&f"
+         - "&bretirer"
+    100_retrait:
+      slot: 26
+      quantity: 1
+      material: PAPER
+      custom_model_data: 10061
+      function: remove-argent
+      percentage: 100
+      name: "&bretirer TOUT"
+      lore:
+      - "&7retirer de l''argent"
+      - "&7"
+      - "&fretirer tout ton argent &8- %quantite%"
+      - "&fMontant en banque &8- %formatte_banque_argent%"
+      - "&f"
+      - "&bretirer"
+      no_permission:
+         name: "&bRetire ce que tu as mis"
+         lore:
+         - "&7Tu ne peux pas retirer dans la banque"
+         - "&7le chef de l''île doit te "
+         - "&7donner la perm dans le /ile permissions"
+         - "&7Tu peux uniquement retiré ce que tu as déposé"
+         - "&7"
+         - "&fretirer &8- %quantite%"
+         - "&fMontant en banque &8- %formatte_banque_argent%"
+         - "&fTon argent &8- %formatte_joueur_argent%"
+         - "&f"
+         - "&bretirer"
+    custom_retrait:
+      slot: 32
+      quantity: 1
+      material: PAPER
+      custom_model_data: 10061
+      function: remove-argent
+      percentage: -1
+      name: "&bRetrait un montant perso"
+      lore:
+        - "&7Retrait un montant personnalisé"
+        - "&f"
+        - "&bRetrait"
+      no_permission:
+        material: PAPER
+        custom_model_data: 10063
+        name: "&bPas la perm"
+        lore:
+          - "&7Tu ne peux pas ajouter"
+          - "&7dans la banque"
+          - "&7le chef de l''île doit te "
+          - "&7donner la perm dans le /ile permissions"
+    banque_argent:
+      slot: 48
+      quantity: 1
+      material: PAPER
+      model_data: 10007
+      name: "&bArgent"
+      lore:
+      - "&7Menu actuel"
+    banque_exp:
+      slot: 49
+      quantity: 1
+      material: PAPER
+      model_data: 10007
+      function: banque-exp
+      name: "&bExp"
+      lore:
+      - "&7Ouvrir la banque d''exp"
+      - "&7"
+      - "&fOuvrir"
+    banque_FP:
+      slot: 50
+      quantity: 1
+      material: PAPER
+      model_data: 10007
+      function: banque-farmpoints
+      name: "&bFarmPoints"
+      lore:
+      - "&7Ouvrir la banque de farmpoints"
+      - "&7"
+      - "&fOuvrir"
+    logs:
+      slot: 13
+      quantity: 1
+      material: PAPER
+      model_data: 10007
+      function: logs-argent
+      name: "&bLogs"
+      lore:
+      - "&7Voir les derniers ajouts/retraits"
+      - "&7"
+      - "&fOuvrir"
+    quitter:
+      slot: 45
+      quantity: 1
+      material: PAPER
+      model_data: 10007
+      function: back # retour au menu précédent
+      name: "&bRetour"
+      lore:
+      - "&bRetour"

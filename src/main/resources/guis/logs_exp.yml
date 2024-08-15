@@ -1,0 +1,80 @@
+title: "Exp Logs" # supporte caractères illimités, comme ça on peut mettre un titre custom avec itemsadder
+row: 6
+items:
+  logs_slots:
+    start_slot: 0
+    end_slot: 35
+    function: log
+    material: PLAYER
+    model_data: 1007
+    log_amount_positive: "&a&l+%quantite%"
+    log_amount_negative: "&c&l-%quantite%"
+    log_date_add:
+      - "%banque_joueur% a ajouté"
+      - "des sous à %banque_log_date%"
+      - " "
+      - "&fMontant &8- &a&l+%banque_log_montant%"
+      - "&fMontant total dans la banque &8-&l %banque_log_solde_total%"
+    log_date_remove:
+      - "%banque_joueur% a a retiré"
+      - "des sous à %banque_log_date%"
+      - " "
+      - "&fMontant &8- &c&l%banque_log_montant%"
+      - "&fMontant total dans la banque &8-&l %banque_log_solde_total%"
+  logs_argent:
+    slot: 48
+    quantity: 1
+    material: PAPER
+    model_data: 10007
+    function: logs-argent
+    name: "&bArgent"
+    lore:
+    - "&7Ouvrir les logs d''argent"
+    - "&7"
+    - "&fOuvrir"
+  logs_exp:
+    slot: 49
+    quantity: 1
+    material: PAPER
+    model_data: 10007
+    name: "&bExp"
+    lore:
+    - "&7menu actuel"
+  logs_farmpoints:
+    slot: 50
+    quantity: 1
+    material: PAPER
+    model_data: 10007
+    function: logs-farmpoints
+    name: "&bFarmPoints"
+    lore:
+    - "&7Ouvrir les logs de fp"
+    - "&7"
+    - "&fOuvrir"
+  page_suivante:
+    slot: 53
+    quantity: 1
+    material: PAPER
+    model_data: 10007
+    function: page-suivante
+    name: "&bPage suivante"
+    lore:
+    - "&7masquer si pas de page"
+  page_precedente:
+    slot: 52
+    quantity: 1
+    material: PAPER
+    model_data: 10007
+    function: page-precedente
+    name: "&bPage précédente"
+    lore:
+    - "&7masquer si pas de page"
+  quitter:
+    slot: 45
+    quantity: 1
+    material: PAPER
+    model_data: 10007
+    function: back # retour au menu précédent
+    name: "&bRetour"
+    lore:
+    - "&bRetour"

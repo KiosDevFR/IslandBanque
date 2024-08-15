@@ -1,0 +1,24 @@
+main: org.cubitech.islandbanque.IslandBanque
+version: '${project.version}'
+api-version: 1.20
+name: IslandBanque
+authors: [Kios Developpement]
+depend: [BeastTokens,Vault,SuperiorSkyblock2,HeadDatabase,PlaceholderAPI]
+
+commands:
+  islandbanque:
+    description: The main command of IslandBanque
+
+permissions:
+  islandbanque.menu:
+    description: "Grants access to the islandbanque menus"
+    default: true
+  islandbanque.command:
+    description: "Grants access to the islandbanque commands"
+    default: true
+  islandbanque.admin:
+    description: "Grants access to the islandbanque admin commands"
+    default: op
+  islandbanque.player:
+    description: ""
+    default: true

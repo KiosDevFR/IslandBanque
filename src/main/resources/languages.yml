@@ -1,0 +1,78 @@
+languages:
+  main:
+    prefix: "&9Banque "
+    interets: "Tu as récup les intérets du jour, %interet_argent%$, %interet_exp%exp, %interet_farmpoints%FP ajoutés à la somme de la banque"
+    cannot_claim_interets: "Vous avez déjà demandé l'intérêt d'aujourd'hui."
+    no_permission: "Pas la permission d accéder à la banque"
+    must_be_player: "Vous devez être un joueur."
+    no_permission_command: "Vous ne pouvez pas utiliser cette commande"
+    interest_can_claim_again: "Les intérêts peuvent être réclamés à nouveau."
+    reload: "Plugin succesfully reload"
+  admin:
+    no_player_found: "ce joueur n a pas été trouvé"
+    no_player_island: "L utilisateur n a pas d île"
+    quantity_add_success: "Quantité ajoutée avec succès"
+    quantity_remove_success: "Quantité retirée avec succès"
+  logs:
+    banque_log_solde_total_positif: "&a&l+%banque_log_solde_total%"
+    banque_log_solde_total_negatif: "&c&l-%banque_log_solde_total%"
+  banque:
+    added_money: "Tu as ajouté %quantite% argent"
+    added_exp: "Tu as ajouté %quantite% exp"
+    added_farmpoints: "Tu as ajouté %quantite% farmpoints"
+    removed_money: "Tu as retiré %quantite% argent"
+    removed_exp: "Tu as retiré %quantite% exp"
+    removed_farmpoints: "Tu as retiré %quantite% farmpoints"
+  failure:
+    too_low: "La somme minimale est de 1"
+    virgule: "Nombres à virgules impossibles" # ou alors juste tu ignores la virgule et tu ajoutes la somme entière
+    not_enough: "Tu n as pas cette somme sur toi"
+    no_permission_ajouter: "Tu n as pas la permission d ajouter, le chef de l ile doit te mettre la perm dans le ./ile permissions."
+    no_permission_retirer: "Tu n as pas la permission de retirer autant que tu veux, le chef de l ile doit te mettre la perm dans le ./ile permissions. Tu peux uniquement retiré la somme que tu as mise &8- : %quantite_peut_retirer%"
+    bad_syntax: "Bad syntax"
+  custom_inputs:
+    escape_sequence: "Annuler"
+    escape_message: "Opération annulée"
+    argent: # lorsque le joueur veut ajouter/retirer un montant custom
+      add:
+      - "&7Tu as actuellement %joueur_argent% $"
+      - "&fIl y a %banque_argent% en banque"
+      - "Entre ci-dessous combien tu veux en ajouter "
+      - "Tape << Annuler >> pour annuler"
+      - "Tape << all >> pour tout ajouter"
+      remove:
+      - "&7Tu as actuellement %joueur_argent% $"
+      - "&fIl y a %banque_argent% en banque"
+      - "Entre ci-dessous combien tu veux en retirer "
+      - "Tape << Annuler >> pour annuler"
+      - "Tape << all >> pour tout retirer"
+    exp:
+      add:
+      - "&7Tu as actuellement %joueur_exp% exp"
+      - "&fIl y a %banque_exp% en banque"
+      - "Entre ci-dessous combien tu veux en ajouter "
+      - "Tape << Annuler >> pour annuler"
+      - "Tape << all >> pour tout ajouter"
+      remove:
+      - "&7Tu as actuellement %joueur_exp% exp"
+      - "&fIl y a %banque_exp% en banque"
+      - "Entre ci-dessous combien tu veux en retirer "
+      - "Tape << Annuler >> pour annuler"
+      - "Tape << all >> pour tout retirer"
+    farmpoints:
+      add:
+      - "&7Tu as actuellement %joueur_farmpoints% $"
+      - "&fIl y a %banque_farmpoints% en banque"
+      - "Entre ci-dessous combien tu veux en ajouter "
+      - "Tape << Annuler >> pour annuler"
+      - "Tape << all >> pour tout ajouter"
+      remove:
+      - "&7Tu as actuellement %joueur_farmpoints% $"
+      - "&fIl y a %banque_farmpoints% en banque"
+      - "Entre ci-dessous combien tu veux en retirer "
+      - "Tape << Annuler >> pour annuler"
+      - "Tape << all >> pour tout retirer"
+  monnaies: # commande /islandbanque monnaies
+    - "&7Tu as %joueur_farmpoints%Fp et la banque %banque_farmpoints%FP"
+    - "&7Tu as %joueur_exp%exp et la banque %banque_exp%exp"
+    - "&7Tu as %joueur_argent%$ et la banque %banque_argent%$"

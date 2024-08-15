@@ -1,0 +1,96 @@
+title: "Banque" # supporte caractères illimités, comme ça on peut mettre un titre custom avec itemsadder
+row: 3
+items:
+    argent:
+      slot: 11
+      quantity: 1
+      material: PAPER
+      custom_model_data: 10058
+      function: banque-argent # pour identifier que le but est d"ouvrir la banque d"argent, à voir si y"a mieux
+      name: "&bBanque d''argent"
+      lore:
+      - "&7ajouter/retirer de l''argent"
+      - "&7dans la banque"
+      - "&7"
+      - "&fMontant sur toi &8- %formatte_joueur_argent%"
+      - "&fMontant en banque &8- %formatte_banque_argent%"
+      - "&f"
+      - "&bpour ouvrir" #ouvre le menu "argent.yml"
+    exp:
+      slot: 12
+      quantity: 1
+      material: PAPER
+      custom_model_data: 10038
+      function: banque-exp # pour identifier que le but est d"ouvrir la banque d"exp
+      name: "&bBanque d''exp"
+      lore:
+      - "&7ajouter/retirer de l''exp"
+      - "&7dans la banque"
+      - "&7"
+      - "&fMontant sur toi &8- %formatte_joueur_exp%"
+      - "&fMontant en banque &8- %formatte_banque_exp%"
+      - "&f"
+      - "&bpour ouvrir" #ouvre le menu "exp.yml"
+    farmpoint:
+      slot: 13
+      quantity: 1
+      material: PAPER
+      custom_model_data: 10037
+      function: banque-farmpoints # pour identifier que le but est d"ouvrir la banque de farmpoints
+      name: "&bBanque de farmpoints"
+      lore:
+      - "&7ajouter/retirer des farmpoints"
+      - "&7dans la banque"
+      - "&7"
+      - "&fMontant sur toi &8- %formatte_joueur_farmpoints%"
+      - "&fMontant en banque &8- %formatte_banque_farmpoints%"
+      - "&f"
+      - "&bpour ouvrir" #ouvre le menu "farmpoints.yml"
+    quitter:
+      slot: 18
+      quantity: 1
+      material: PAPER
+      model_data: 10007
+      function: command
+      name: "&bRetour au menu principal"
+      lore:
+      - "&bpour ouvrir"
+      left_click_commands:
+      - "dm open menu" #ici on veut pouvoir rediriger le joueur ailleurs, à voir comment tu veux faire
+      right_click_commands:
+      - "dm open menu"
+    #informations:
+    #  slot: 8
+    #  quantity: 1
+    #  material: hdb-1007 # supporte headdatabase (ici on a prit le modèle de deluxemenus, mais libre choix)
+    #  name: "&bInfo"
+    #  lore:
+    #  - "&fDes infos random"
+    interet_dispo:
+      slot: 15
+      quantity: 1
+      material: PAPER
+      custom_model_data: 10041
+      function: interets # pour identifier que le bouton sert aux intérets
+      name: "&bIntérets"
+      lore:
+      - "&7Récupérer des intérêts 1x/jour"
+      - "&7"
+      - "&fIntérêts d''argent &8- %interet_argent%"
+      - "&fIntérêts d''exp &8- %interet_exp%"
+      - "&fIntérêts de farmpoints &8- %interet_farmpoints%"
+      - "&fTaux d''intérêts &8- %interets%"
+      - "&f"
+      - "&bpour récup"
+      non-available:
+        material: PAPER
+        custom_model_data: 10043
+        name: "&bIntérets"
+        lore:
+        - "&7Récupérer des intérêts 1x/jour"
+        - "&7"
+        - "&fTaux d''intérêts &8- %interets%"
+        - "&fLimite d''intérêts d''argent &8- %interet_max_exp%"
+        - "&fLimite d''intérêts d''exp &8- %interet_max_farmpoints%"
+        - "&fLimite d''intérêts de farmpoints &8- %interet_max_argent%"
+        - "&fInterets dispo dans &8- %temps_interet%"

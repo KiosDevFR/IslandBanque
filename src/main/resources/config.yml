@@ -1,0 +1,9 @@
+Config:
+  default_interet: 0.05 # Intérêts par défaut lorsqu'on créé une île
+  default_limite_argent: 10000 #limite par défaut d'argent
+  default_limite_exp: 1000
+  default_limite_farmpoints: 10
+  max_logs: 72 # logs maximums dans chaque monnaie de la banque
+  free-slots-logs: 0-35 # les items de 0 à 35 sont utilisés pour afficher les logs
+  time-of-day-to-claim-interest: "00:00" # Moment de la journée (00:00 - 23:59), où les joueurs peuvent réclamer à nouveau les intérêts de la banque.
+  islands-world: "Iles" # Monde où se trouvent les îles
